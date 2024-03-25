@@ -6,9 +6,9 @@ from google.cloud import storage
 app = Flask(__name__)
 
 # EDIT SECTION: Enter appropriate values
-bucket_name = "BUCKET_NAME" # Enter Bucket Name here
-start_date_str = "2023-08" # Enter published date of app in YYYY-MM here 
-app_name = "com.example.app" # Enter your app package name
+bucket_name = "pubsite_prod_rev_07499180413497830537" # Enter Bucket Name here
+start_date_str = "2024-01" # Enter published date of app in YYYY-MM here 
+app_name = "com.Neuhauser.PublicPool.io.Stats" # Enter your app package name
 # For deployment the path should start with api/<KEY_FILE_NAME> or a relative path (Since Vercel have root directory ./ )
 # For testing the path should be only name of the file since we already in api (due cd api)
 client = storage.Client.from_service_account_json('KEY_FILE_PATH') # Enter key file path here
