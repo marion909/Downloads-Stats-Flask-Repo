@@ -11,7 +11,7 @@ start_date_str = "2024-01" # Enter published date of app in YYYY-MM here
 app_name = "com.Neuhauser.PublicPool.io.Stats" # Enter your app package name
 # For deployment the path should start with api/<KEY_FILE_NAME> or a relative path (Since Vercel have root directory ./ )
 # For testing the path should be only name of the file since we already in api (due cd api) 
-client = storage.Client.from_service_account_json('key.json') # Enter key file path here
+client = storage.Client.from_service_account_json('api/key.json') # Enter key file path here
 
 
 lastDate = "" 
