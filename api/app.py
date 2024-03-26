@@ -6,7 +6,7 @@ from google.cloud import storage
 app = Flask(__name__)
 
 # EDIT SECTION: Enter appropriate values
-bucket_name = "pubsite_prod_rev_07499180413497830537" # Enter Bucket Name here
+bucket_name = "piblic-pool" # Enter Bucket Name here
 start_date_str = "2024-01" # Enter published date of app in YYYY-MM here 
 app_name = "com.Neuhauser.PublicPool.io.Stats" # Enter your app package name
 # For deployment the path should start with api/<KEY_FILE_NAME> or a relative path (Since Vercel have root directory ./ )
